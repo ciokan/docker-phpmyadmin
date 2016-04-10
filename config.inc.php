@@ -21,6 +21,10 @@ if (isset($_ENV['ALLOW_ARBITRARY'])) {
 	$cfg['AllowArbitraryServer'] = (bool)$_ENV['ALLOW_ARBITRARY'];
 }
 
+if (isset($_ENV['EXEC_TIMELIMIT'])) {
+	$cfg['ExecTimeLimit'] = (int)$_ENV['EXEC_TIMELIMIT'];
+}
+
 if (isset($_ENV['ABSOLUTE_URI'])) {
 	$cfg['PmaAbsoluteUri'] = $_ENV['ABSOLUTE_URI'];
 }
